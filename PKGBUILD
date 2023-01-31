@@ -6,15 +6,14 @@ pkgdesc="Bare-bones alternative to Neofetch written in Python."
 arch=('any')
 url="https://github.com/samtf1/pyfetch"
 license=('GPL3')
-depends=()
-source=("https://github.com/samtf1/pyfetch.py")
+depends=("python" "python-psutil" "python-py-cpuinfo")
+source=("https://github.com/samtf1/pyfetch")
 md5sums=("SKIP")
 
 
 package() {
-        cd ${srcdir}/pyfetch.py
         mkdir -p ${pkgdir}/usr/bin
-        cp "${srcdir}/pyfetch.py" "${pkgdir}/usr/bin/pyfetch"
+        cp "${srcdir}/pyfetch" "${pkgdir}/usr/bin/pyfetch"
         chmod a+x "${pkgdir}/usr/bin/pyfetch"
 
 }
