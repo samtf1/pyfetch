@@ -1,2 +1,2 @@
 #!/bin/bash
-cp pyfetch /usr/bin/pyfetch
+cp pyfetch.py /usr/bin/pyfetch
