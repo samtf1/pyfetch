@@ -15,6 +15,6 @@ package() {
         cd ${srcdir}/pyfetch.py
         mkdir -p ${pkgdir}/usr/bin
         cp "${srcdir}/pyfetch.py" "${pkgdir}/usr/bin/pyfetch"
-        chmod +x "${pkgdir}/usr/bin/pyfetch"
+        chmod a+x "${pkgdir}/usr/bin/pyfetch"
 
 }
