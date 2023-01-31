@@ -7,12 +7,12 @@ arch=('any')
 url="https://github.com/samtf1/pyfetch"
 license=('GPL3')
 depends=()
-source=("https://github.com/samtf1/pyfetch")
+source=("https://github.com/samtf1/pyfetch.py")
 md5sums=("SKIP")
 
 
 package() {
-        cd ${srcdir}
+        cd ${srcdir}/pyfetch.py
         mkdir -p ${pkgdir}/usr/bin
         cp "${srcdir}/pyfetch.py" "${pkgdir}/usr/bin/pyfetch"
         chmod +x "${pkgdir}/usr/bin/pyfetch"
